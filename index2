@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Nare | Social Media Strategist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-pink': '#FF99CC',
+                        'brand-pink-light': '#FFEBF5',
+                        'brand-black': '#0F0F0F',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFEBF5; /* Very light pink background matching the image edges */
+            color: #0F0F0F;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFEBF5; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF99CC; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff66b3; 
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px black;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-pink selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-brand-pink-light/90 backdrop-blur-md border-b border-pink-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-black text-2xl tracking-tighter uppercase">Parth.</div>
+            <div class="hidden md:flex space-x-8 font-bold text-sm uppercase tracking-wide">
+                <a href="#about" class="hover:text-brand-pink transition-colors">About</a>
+                <a href="#portfolio" class="hover:text-brand-pink transition-colors">Portfolio</a>
+                <a href="#skills" class="hover:text-brand-pink transition-colors">Skills</a>
+                <a href="#contact" class="hover:text-brand-pink transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="bg-black text-brand-pink px-6 py-2 rounded-full font-bold uppercase text-sm hover:bg-gray-800 transition-colors shadow-lg">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-20 md:pt-48 md:pb-32 px-6 flex flex-col items-center text-center animate-fade-in-up">
+        <h2 class="text-brand-pink font-bold tracking-widest uppercase mb-2 text-sm md:text-base">Mumbai, MH • Social Media Strategist</h2>
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black uppercase tracking-tighter leading-none mb-6">
+            DIGITAL <br> <span class="text-outline">MARKETING</span>
+        </h1>
+        <p class="text-xl md:text-2xl font-semibold max-w-3xl mb-10 text-gray-800">
+            Driving <span class="bg-black text-brand-pink px-2 py-1 rounded">1M+ Reach</span>, 25x Growth, and High ROI for Brands.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#portfolio" class="bg-brand-pink text-black px-8 py-4 font-black uppercase tracking-wide hover:bg-pink-400 transition-colors shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black">View My Work</a>
+            <a href="#contact" class="bg-white text-black px-8 py-4 font-black uppercase tracking-wide hover:bg-gray-100 transition-colors shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black">Let's Connect</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black text-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-brand-pink font-black text-4xl md:text-5xl uppercase mb-6 tracking-tight">The Art of Storytelling</h2>
+            <p class="text-lg md:text-xl leading-relaxed font-medium mb-8">
+                I am a results-driven digital marketer who knows how to grab attention and build brand presence from scratch. I use data-backed content, analytics, and consumer psychology to drive scalable growth. Open to roles in top Mumbai digital agencies where I can bring proven growth strategies and measurable social media outcomes.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-gray-800 pt-8">
+                <div>
+                    <div class="text-4xl font-black text-brand-pink">2.5K+</div>
+                    <div class="text-sm font-bold uppercase tracking-wide mt-2">IG Followers (25x)</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-brand-pink">1M+</div>
+                    <div class="text-sm font-bold uppercase tracking-wide mt-2">Cumulative Reach</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-brand-pink">40%</div>
+                    <div class="text-sm font-bold uppercase tracking-wide mt-2">Engagement Boost</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-brand-pink">10K+</div>
+                    <div class="text-sm font-bold uppercase tracking-wide mt-2">YouTube Subs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Case Studies (Instagram Post Grid Style) -->
+    <section id="portfolio" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">Case Studies</h2>
+            <p class="font-semibold text-gray-700 tracking-widest uppercase text-sm">Real Numbers. Real Growth.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="aspect-square bg-brand-pink p-8 flex flex-col justify-center text-center border-4 border-black hover:-translate-y-2 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden group">
+                <div class="uppercase font-bold text-xs tracking-widest mb-4">#SocialMediaGrowth</div>
+                <h3 class="text-4xl font-black uppercase tracking-tight leading-none mb-6">Instagram Mastery</h3>
+                <p class="font-medium text-sm md:text-base leading-snug">
+                    Scaled a homegrown brand from 0 to 2,500+ followers (25x growth). Generated 1M+ cumulative reach and improved engagement by 30-40% using Meta Ads and organic strategies.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="aspect-square bg-black text-white p-8 flex flex-col justify-center text-center border-4 border-black hover:-translate-y-2 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(255,153,204,1)]">
+                <div class="uppercase font-bold text-xs tracking-widest mb-4 text-brand-pink">#ContentCreator</div>
+                <h3 class="text-4xl font-black uppercase tracking-tight leading-none mb-6">YouTube SEO & Growth</h3>
+                <p class="font-medium text-sm md:text-base leading-snug text-gray-300">
+                    Built a channel from 0 to 10,000+ subscribers. Fully monetized via AdSense. Optimized CTR, audience retention, and hook scripting to maximize views and engagement.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="aspect-square bg-white text-black p-8 flex flex-col justify-center text-center border-4 border-black hover:-translate-y-2 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                <div class="uppercase font-bold text-xs tracking-widest mb-4">Measure. Adjust. Succeed.</div>
+                <h3 class="text-4xl font-black uppercase tracking-tight leading-none mb-6 text-brand-pink">The Power Of Analytics</h3>
+                <p class="font-medium text-sm md:text-base leading-snug">
+                    Data-driven decisions make all the difference. Applied A/B testing, funnel-based content approaches, and KPI tracking (CTR, impressions, reach) to maximize ROI.
+                </p>
+            </div>
+
+             <!-- Card 4 (Aesthetic Filler) -->
+             <div class="aspect-square bg-black text-white p-8 flex flex-col justify-center text-center border-4 border-black hover:-translate-y-2 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(255,153,204,1)]">
+                <div class="uppercase font-bold text-xs tracking-widest mb-4 text-brand-pink">#PerformanceMarketing</div>
+                <h3 class="text-4xl font-black uppercase tracking-tight leading-none mb-6">Meta Ads Optimization</h3>
+                <p class="font-medium text-sm md:text-base leading-snug text-gray-300">
+                    Planned and executed paid advertising campaigns. Improved reach, impressions, and conversion potential using data-driven targeting and audience insights.
+                </p>
+            </div>
+
+            <!-- Card 5 (Aesthetic Filler) -->
+            <div class="aspect-square bg-brand-pink text-black p-8 flex flex-col justify-center text-center border-4 border-black hover:-translate-y-2 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                <div class="uppercase font-bold text-xs tracking-widest mb-4">#DigitalMarketing</div>
+                <h3 class="text-4xl font-black uppercase tracking-tight leading-none mb-6">Master The Digital World</h3>
+                <p class="font-medium text-sm md:text-base leading-snug">
+                    Your gateway to success. Discovered proven strategies that combine SEO principles, content marketing, and paid campaigns to drive brand awareness.
+                </p>
+            </div>
+
+            <!-- Card 6 (Aesthetic Filler) -->
+            <div class="aspect-square bg-white text-black p-8 flex flex-col justify-center text-center border-4 border-black hover:-translate-y-2 transition-transform duration-300 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                <div class="uppercase font-bold text-xs tracking-widest mb-4">Elevate With Style</div>
+                <h3 class="text-4xl font-black uppercase tracking-tight leading-none mb-6 text-brand-pink">Branding & Strategy</h3>
+                <p class="font-medium text-sm md:text-base leading-snug">
+                    Level up the visual game. Produced high-performing content using storytelling and consistent visual branding to make brands unforgettable.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Education Section -->
+    <section id="skills" class="py-24 bg-brand-pink text-black px-6 border-y-4 border-black">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <!-- Skills -->
+            <div>
+                <h2 class="text-4xl font-black uppercase tracking-tight mb-8">Core Skills</h2>
+                <div class="flex flex-wrap gap-4">
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">Content Marketing</span>
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">Meta Business Suite</span>
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">Instagram Analytics</span>
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">Canva Design</span>
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">SEO & Growth</span>
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">Audience Targeting</span>
+                    <span class="px-6 py-3 bg-black text-brand-pink font-bold uppercase tracking-wide text-sm rounded shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">A/B Testing</span>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h2 class="text-4xl font-black uppercase tracking-tight mb-8">Education</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-black text-xl uppercase">B.Tech Artificial Intelligence & Data Science</h3>
+                            <span class="bg-brand-pink text-black font-bold px-3 py-1 text-sm border-2 border-black">2028</span>
+                        </div>
+                        <p class="font-semibold text-gray-700">SIES Graduate School of Technology</p>
+                    </div>
+
+                    <div class="bg-white p-6 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-black text-xl uppercase">PCM HSC & MHT CET</h3>
+                            <span class="bg-black text-brand-pink font-bold px-3 py-1 text-sm">2024</span>
+                        </div>
+                        <p class="font-semibold text-gray-700">N.G. Acharya D.K. Marathe College</p>
+                        <p class="font-black mt-2 bg-brand-pink inline-block px-2">SCORE: 93.47%</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-black text-white py-20 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 text-brand-pink">Let's Work Together</h2>
+            <p class="text-lg md:text-xl font-medium mb-12 text-gray-300">
+                Looking for a data-driven marketer to scale your brand in Mumbai? Drop me an email or call me directly.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
+                <a href="mailto:parthnare2009@gmail.com" class="flex items-center gap-3 bg-white text-black px-8 py-4 font-black uppercase tracking-wide hover:bg-brand-pink transition-colors border-2 border-transparent hover:border-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    parthnare2009@gmail.com
+                </a>
+                <a href="tel:+918828521401" class="flex items-center gap-3 bg-transparent border-2 border-brand-pink text-brand-pink px-8 py-4 font-black uppercase tracking-wide hover:bg-brand-pink hover:text-black transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    +91 8828521401
+                </a>
+            </div>
+
+            <div class="text-gray-500 font-semibold text-sm uppercase tracking-widest">
+                © <script>document.write(new Date().getFullYear())</script> Parth Nare. All Rights Reserved. <br> Mumbai, Maharashtra.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
